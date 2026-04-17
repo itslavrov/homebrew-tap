@@ -11,7 +11,7 @@ class Wrtbox < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/itslavrov/wrtbox/releases/download/v0.3.0/wrtbox_0.3.0_darwin_amd64.tar.gz"
-      sha256 "d38b5abe695ef3da6e0759dde001a7fbcda67c511a5b3f3827e2be60cdbf9fe8"
+      sha256 "ad39382933e4773bcddaba4e3b696ac8f81189776504254b72069a15cad5581d"
 
       define_method(:install) do
         bin.install "wrtbox"
@@ -19,7 +19,7 @@ class Wrtbox < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/itslavrov/wrtbox/releases/download/v0.3.0/wrtbox_0.3.0_darwin_arm64.tar.gz"
-      sha256 "771100bb812477f7155570d5a5a7003c73511c4887cc611ed06d7c6cb6b794a4"
+      sha256 "a98dae022697d97991f2b836e36f141c890e82406f308fec6c5f97ef79b89979"
 
       define_method(:install) do
         bin.install "wrtbox"
@@ -30,14 +30,14 @@ class Wrtbox < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/itslavrov/wrtbox/releases/download/v0.3.0/wrtbox_0.3.0_linux_amd64.tar.gz"
-      sha256 "f7b46a3e7dd0906edb66491d807ae5e48c7d502c78c62c2295911747750d099c"
+      sha256 "f26b05942dae1762a5f1c52958c82392535d34a7fdcd27ddb63b6d0549cbc395"
       define_method(:install) do
         bin.install "wrtbox"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/itslavrov/wrtbox/releases/download/v0.3.0/wrtbox_0.3.0_linux_arm64.tar.gz"
-      sha256 "d598c71c9be59e748bb2cda40175fdd6f69a0187742c010a33aa23bf8d1d4339"
+      sha256 "6ae86cf6f28b6c9269923ec98081be55b14c6f91bf116275a5df1fc43bdb26a1"
       define_method(:install) do
         bin.install "wrtbox"
       end
