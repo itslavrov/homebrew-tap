@@ -1,6 +1,6 @@
 # itslavrov/homebrew-tap
 
-Homebrew tap for [wrtbox](https://github.com/itslavrov/wrtbox) and other tools.
+Homebrew tap for itslavrov.
 
 ## Usage
 
